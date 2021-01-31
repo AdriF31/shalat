@@ -5,7 +5,8 @@ import 'package:shalat/pages/shalatpedia.dart';
 import 'package:shalat/pages/splashscreen.dart';
 import 'package:shalat/pages/navbar.dart';
 import 'package:shalat/pages/gerakan_shalat.dart';
-import 'package:shalat/pages/test.dart';
+import 'package:shalat/pages/shalat.dart';
+import 'package:shalat/pages/dzikir.dart';
 
 void main() => runApp(MyApp());
 
@@ -26,6 +27,8 @@ class MyApp extends StatelessWidget {
         "/navbar" : (BuildContext context) => Navigasi(),
         "/shalatpedia" : (BuildContext context) => Shalatpedia(),
         "/gerakanshalat" : (BuildContext context) => GerakanShalat(),
+        "/shalat" : (BuildContext context) => Shalat(),
+        "/dzikir" : (BuildContext context) => Dzikir(),
       },
       theme: ThemeData(
         primaryColor: Color.fromRGBO(101, 195, 196, 1),

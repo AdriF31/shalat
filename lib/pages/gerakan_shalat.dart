@@ -9,7 +9,7 @@ class GerakanShalat extends StatefulWidget {
 class _GerakanShalatState extends State<GerakanShalat> {
   var _index = 0;
   Widget _builderStep() => Container(
-    margin: EdgeInsets.only(top: 10, bottom: 10),
+    margin: EdgeInsets.only(left: 10, right: 10),
     color: Colors.white,
     child: Stepper(
       steps: [
@@ -83,6 +83,13 @@ class _GerakanShalatState extends State<GerakanShalat> {
               style: TextStyle(fontFamily: 'montserrat', fontSize: 17),textAlign:TextAlign.justify
           ),
         ),
+        Step(
+          title: Text("Tertib",style: TextStyle(fontFamily: 'montserrat', fontSize: 17),),
+          content: Text(
+              'Rukun shalat dikerjakan secara berurutan',
+              style: TextStyle(fontFamily: 'montserrat', fontSize: 17),textAlign:TextAlign.justify
+          ),
+        )
       ],
       currentStep: _index,
       onStepTapped: (index) {
@@ -100,12 +107,12 @@ class _GerakanShalatState extends State<GerakanShalat> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("ZAKATPEDIA", style: TextStyle(fontFamily: 'montserrat', fontWeight: FontWeight.bold),),
+        title: Text("RUKUN SHALAT", style: TextStyle(fontFamily: 'montserrat', fontWeight: FontWeight.bold),),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: <Widget>[_builderStep(), SizedBox(height: 800)],
+          children: <Widget>[_builderStep(),],
         ),
       ),
     );
