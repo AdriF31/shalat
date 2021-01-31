@@ -24,7 +24,7 @@ class _DzikirState extends State<Dzikir> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("ZAKAT MAAL", style: TextStyle(fontFamily: 'montserrat', fontWeight: FontWeight.bold),),
+        title: Text("DZIKIR", style: TextStyle(fontFamily: 'montserrat', fontWeight: FontWeight.bold),),
         centerTitle: true,
         bottom: TabBar(
           controller: controller,

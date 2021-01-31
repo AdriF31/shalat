@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         "/dzikir" : (BuildContext context) => Dzikir(),
       },
       theme: ThemeData(
-        primaryColor: Color.fromRGBO(101, 195, 196, 1),
+        primaryColor: Color.fromRGBO(29, 60, 69, 1),
       ),
     );
   }

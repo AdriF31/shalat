@@ -26,11 +26,11 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
     )..init(context);
     return Scaffold(
         body: Container(
-          color: Color.fromRGBO(156, 241, 150, 1),
+          color: Color.fromRGBO(29, 60, 69, 1),
           child : Center(
             child: Container(
               child: Image(
-                image: AssetImage("assets/img/logo.png"),
+                image: AssetImage("assets/img/shalat.png"),
                 width: 150,
                 height: 150,
               ),

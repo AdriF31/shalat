@@ -33,8 +33,8 @@ class _NavigasiState extends State<Navigasi> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             IconButton(
-              icon: Icon(Icons.home),
-              color: currentTab==0? Colors.green : Colors.grey[400],
+              icon: Icon(Icons.home, size: 30,),
+              color: currentTab==0? Color.fromRGBO(29, 60, 69, 1) : Colors.white,
               onPressed: () {
                 setState(() {
                   currentScreen = HomePage();
@@ -43,8 +43,8 @@ class _NavigasiState extends State<Navigasi> {
               },
             ),
             IconButton(
-              icon: Icon(IconApp.muslim),
-              color: currentTab==1? Colors.green : Colors.grey[400],
+              icon: Icon(IconApp.muslim, size: 30,),
+              color: currentTab==1? Color.fromRGBO(29, 60, 69, 0.8) : Colors.white,
               onPressed: () {
                 setState(() {
                   currentScreen = JadwalShalat();
@@ -54,7 +54,7 @@ class _NavigasiState extends State<Navigasi> {
             ),
           ],
         ),
-        color: Colors.white,
+        color: Color.fromRGBO(78, 148, 156,1),
       ),
     );
   }

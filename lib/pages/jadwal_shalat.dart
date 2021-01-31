@@ -31,7 +31,7 @@ class JadwalShalatState extends State<JadwalShalat> {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
-            color: Color.fromRGBO(32, 106, 93, 1)),
+            color: Color.fromRGBO(78, 148, 156, 1)),
         child: Stack(
           children: <Widget>[
             blurBackground(),
@@ -60,7 +60,7 @@ class JadwalShalatState extends State<JadwalShalat> {
   Widget detailJadwal() {
     return Container(
       height: 150.0,
-      color: Colors.black.withOpacity(.2),
+      color: Color.fromRGBO(78, 148, 156, 0.2),
       alignment: Alignment.center,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -69,7 +69,7 @@ class JadwalShalatState extends State<JadwalShalat> {
             height: 50.0,
             width: 50.0,
             child: CircleAvatar(
-              backgroundColor: Color(0xFF56A74D),
+              backgroundColor: Color.fromRGBO(240,128,128, 1),
               child: Icon(
                 selected.icon,
                 color: Colors.white,
@@ -79,7 +79,7 @@ class JadwalShalatState extends State<JadwalShalat> {
           Text(
             selected.waktu,
             style: TextStyle(
-                color: Color(0xFF56A74D),
+                color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontSize: 25.0),
           ),
@@ -187,7 +187,7 @@ class JadwalShalatState extends State<JadwalShalat> {
                 logo,
                 color: Colors.white,
               ),
-              backgroundColor: Color(0xFF56A74D),
+              backgroundColor: Color.fromRGBO(240,128,128, 1),
             ),
             title: Text(
               dataWaktu.keys.toList()[index],
@@ -197,7 +197,7 @@ class JadwalShalatState extends State<JadwalShalat> {
               dataWaktu.values.toList()[index],
               style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  color: Color(0xFF56A74D),
+                  color: Colors.white,
                   fontSize: 20.0),
             ),
           ),
@@ -224,7 +224,7 @@ class JadwalShalatState extends State<JadwalShalat> {
       child: FlatButton(
         shape:
         RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-        color: Color(0xFF56A74D),
+        color: Color.fromRGBO(78, 148, 156, 1),
         child: Text(
           "Refresh",
           style: TextStyle(color: Colors.white, fontSize: 18.0),

@@ -32,7 +32,7 @@ class _KeutamaanDzikirState extends State<KeutamaanDzikir> {
             if(snapshot.connectionState == ConnectionState.waiting){
               return Center(
                 child: SpinKitFadingCircle(
-                  color: Colors.green,
+                  color: Color.fromRGBO(78, 148, 156, 1),
                   duration: Duration(seconds: 2),
                 ),
               );
@@ -47,12 +47,20 @@ class _KeutamaanDzikirState extends State<KeutamaanDzikir> {
                       onTap: () => navigateToDetail(snapshot.data[index]),
                       child: Container(
                         decoration: BoxDecoration(
-                            color: Color.fromRGBO(88, 149, 84, 1),
+                            gradient: LinearGradient(
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                          colors: [
+                            Color.fromRGBO(78, 148, 156, 1),
+                            Color.fromRGBO(29, 60, 69, 0.7),
+                          ],
+                                stops: [0.5, 1]
+                            ),
                             borderRadius: BorderRadius.circular(10)
                         ),
                         child: ListTile(
                           title: Text(snapshot.data[index].data["title"],
-                            style: TextStyle(fontFamily: 'montserrat',fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),),
+                            style: TextStyle(fontFamily: 'montserrat',fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),),
                         ),
                       ),
                     ),
