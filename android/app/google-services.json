@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1039213920188",
+    "project_id": "shalat-cc325",
+    "storage_bucket": "shalat-cc325.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039213920188:android:39aeda5f9e2d26ace4f5b9",
+        "android_client_info": {
+          "package_name": "com.kelompok5.shalat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039213920188-2po83fe88dapssimaclj6080i56cjn1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIZsEZXOJFM5tdf6pa7iuuAOy3lJxCTKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039213920188-2po83fe88dapssimaclj6080i56cjn1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
