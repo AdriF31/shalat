@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
                             Image(
-                              image: AssetImage("assets/img/shalat.png"),
+                              image: AssetImage("assets/img/shalatpedia.png"),
                               width: 100,
                               height: 100,
                             ),
@@ -129,7 +129,7 @@ class _HomePageState extends State<HomePage> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
                             Image(
-                              image: AssetImage("assets/img/logo_gerakan_shalat.png"),
+                              image: AssetImage("assets/img/rukun_shalat.png"),
                               width: 100,
                               height: 100,
                             ),
@@ -163,7 +163,7 @@ class _HomePageState extends State<HomePage> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
                             Image(
-                              image: AssetImage("assets/img/logo_zikir.png"),
+                              image: AssetImage("assets/img/dzikir.png"),
                               width: 100,
                               height: 100,
                             ),

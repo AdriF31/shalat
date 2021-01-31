@@ -34,7 +34,7 @@ class _NavigasiState extends State<Navigasi> {
           children: <Widget>[
             IconButton(
               icon: Icon(Icons.home, size: 30,),
-              color: currentTab==0? Color.fromRGBO(29, 60, 69, 1) : Colors.white,
+              color: currentTab==0? Colors.white : Colors.grey[400],
               onPressed: () {
                 setState(() {
                   currentScreen = HomePage();
@@ -44,7 +44,7 @@ class _NavigasiState extends State<Navigasi> {
             ),
             IconButton(
               icon: Icon(IconApp.muslim, size: 30,),
-              color: currentTab==1? Color.fromRGBO(29, 60, 69, 0.8) : Colors.white,
+              color: currentTab==1? Colors.white : Colors.grey[400],
               onPressed: () {
                 setState(() {
                   currentScreen = JadwalShalat();

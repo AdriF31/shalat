@@ -30,7 +30,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
           child : Center(
             child: Container(
               child: Image(
-                image: AssetImage("assets/img/shalat.png"),
+                image: AssetImage("assets/img/shalatpedia.png"),
                 width: 150,
                 height: 150,
               ),
